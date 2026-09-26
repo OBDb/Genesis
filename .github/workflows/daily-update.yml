@@ -13,7 +13,7 @@ permissions:
 
 # Make prefixes for this repo
 env:
-  FILTER_PREFIX: Genesis-
+  FILTER_ARGS: --filter-prefix=Genesis- --filter-prefix=Hyundai- --filter-prefix=Kia-
   SIGNAL_PREFIX: GENESIS
 
 concurrency:
@@ -72,7 +72,7 @@ jobs:
           path: .meta
 
       - name: Run data extraction script
-        run: python .meta/repo-tools/extract_signalsets.py --fetch --workspace workspace --output build --filter-prefix=${{ env.FILTER_PREFIX }} --signal-prefix=${{ env.SIGNAL_PREFIX }}
+        run: python .meta/repo-tools/extract_signalsets.py --fetch --workspace workspace --output build ${{ env.FILTER_ARGS }} --signal-prefix=${{ env.SIGNAL_PREFIX }}
         id: extract_data
 
       - name: Checkout schemas repo
