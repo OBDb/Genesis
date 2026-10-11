@@ -496,7 +496,7 @@
   "signals": [
     {"id": "GENESIS_TQ_ACT", "path": "Engine", "fmt": {"bix": 64, "len": 16, "blsb": true, "max": 99.94, "mul": 61, "div": 40000, "unit": "percent" }, "name": "Torque, actual"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "06"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "06"}, "freq": 5,
   "signals": [
     {"id": "GENESIS_DPF_REGENERATION_STATE",         "path": "Engine",  "fmt": {"bix": 207, "len": 1,  "max": 1,                                                                                   "unit": "offon"   },                "name": "Diesel particulate filter regeneration state"},
     {"id": "GENESIS_BAT_CURRENT_BATSENS_7E0_7E0_06", "path": "Battery", "fmt": {"bix": 736, "len": 16, "blsb": true, "max": 2047.9375, "min": -2048,                  "div": 16,     "sign": true,                   "unit": "amps"    },                                                      "name": "Battery current, battery sensor"},
@@ -642,6 +642,10 @@
     {"id": "GENESIS_MIN_ADPT_LO_MECH_P",      "path": "Engine",  "fmt": {"bix": 496, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Min adaptation value for lower mechanical stop of the boost pressure actuator during engine stop"},
     {"id": "GENESIS_MIN_ADPT_LO_MECH_STOP_P", "path": "Engine",  "fmt": {"bix": 512, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Min adaptation value for lower mechanical stop of the boost pressure actuator during engine running"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "1A"}, "freq": 1,
+  "signals": [
+    {"id": "GENESIS_BAT_ST_CHG", "path": "Battery", "fmt": {"bix": 80, "len": 8, "max": 255, "unit": "percent" }, "name": "Battery state of charge"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "1B"}, "freq": 1,
   "signals": [
     {"id": "GENESIS_DPF_DIFFERENTIAL_PRESSURE", "path": "Engine", "fmt": { "len": 16, "max": 32767.5, "div": 2, "unit": "unknown" }, "name": "Diesel particulate filter differential pressure"}
@@ -723,18 +727,18 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E001"}, "freq": 2,
   "signals": [
-    {"id": "GENESIS_BATTERY_V",                   "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 17.37,                  "mul": 17.37, "div": 255,                                              "unit": "volts"   }, "name": "Battery voltage"},
-    {"id": "GENESIS_BATTERY_V_26",                "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 17.37,                  "mul": 17.37, "div": 255,                "nullmin": 0,                 "unit": "volts"   }, "name": "Battery voltage"},
-    {"id": "GENESIS_BATTERY_V_AFTER_IGNITION",    "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 17.37,                  "mul": 17.37, "div": 255,                                              "unit": "volts"   }, "name": "Battery voltage after ignition"},
-    {"id": "GENESIS_BATTERY_V_AFTER_IGNITION_26", "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 17.37,                  "mul": 17.37, "div": 255,                "nullmin": 0,                 "unit": "volts"   }, "name": "Battery voltage after ignition"},
-    {"id": "GENESIS_BATTERY_SOC",                 "path": "Battery", "fmt": {"bix": 48,  "len": 8, "max": 255,                                                                           "nullmax": 255, "unit": "percent" }, "name": "12V battery state of charge"},
-    {"id": "GENESIS_IAT",                         "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143,                                  "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Intake air temperature"},
-    {"id": "GENESIS_EIT",                         "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143,        "min": -48, "mul": 3,     "div": 4,      "add": -48,                               "unit": "celsius" }, "name": "Intake air temperature"},
-    {"id": "GENESIS_INTAKE_TEMP",                 "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143.254781,                           "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Intake Air Temperature"},
-    {"id": "GENESIS_EOT",                         "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143,                                  "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Engine oil temperature"},
-    {"id": "GENESIS_EOT_7E0",                     "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143,        "min": -48, "mul": 3,     "div": 4,      "add": -48,                               "unit": "celsius" }, "name": "Engine oil temperature"},
-    {"id": "GENESIS_OIL_TEMP",                    "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143.254781,                           "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Engine Oil Temperature",         "suggestedMetric": "engineOilTemperature"},
-    {"id": "GENESIS_EOT_26",                      "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143,        "min": -48, "mul": 3,     "div": 4,      "add": -48,                               "unit": "celsius" }, "name": "Engine oil temperature",         "suggestedMetric": "engineOilTemperature"}
+    {"id": "GENESIS_BATTERY_V",                   "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 17.37,                "mul": 17.37, "div": 255,                                              "unit": "volts"   }, "name": "Battery voltage"},
+    {"id": "GENESIS_BATTERY_V_26",                "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 17.37,                "mul": 17.37, "div": 255,                "nullmin": 0,                 "unit": "volts"   }, "name": "Battery voltage"},
+    {"id": "GENESIS_BATTERY_V_AFTER_IGNITION",    "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 17.37,                "mul": 17.37, "div": 255,                                              "unit": "volts"   }, "name": "Battery voltage after ignition"},
+    {"id": "GENESIS_BATTERY_V_AFTER_IGNITION_26", "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 17.37,                "mul": 17.37, "div": 255,                "nullmin": 0,                 "unit": "volts"   }, "name": "Battery voltage after ignition"},
+    {"id": "GENESIS_BATTERY_SOC",                 "path": "Battery", "fmt": {"bix": 48,  "len": 8, "max": 255,                                                                         "nullmax": 255, "unit": "percent" }, "name": "12V battery state of charge"},
+    {"id": "GENESIS_IAT",                         "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143,                                "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Intake air temperature"},
+    {"id": "GENESIS_EIT",                         "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143,      "min": -48, "mul": 3,     "div": 4,      "add": -48,                               "unit": "celsius" }, "name": "Intake air temperature"},
+    {"id": "GENESIS_INTAKE_TEMP",                 "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143.2547,                           "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Intake air temperature"},
+    {"id": "GENESIS_EOT",                         "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143,                                "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Engine oil temperature"},
+    {"id": "GENESIS_OIL_TEMP",                    "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143.2547,                           "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Engine oil temperature"},
+    {"id": "GENESIS_EOT_7E0",                     "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143,      "min": -48, "mul": 3,     "div": 4,      "add": -48,                               "unit": "celsius" }, "name": "Engine oil temperature"},
+    {"id": "GENESIS_EOT_26",                      "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143,      "min": -48, "mul": 3,     "div": 4,      "add": -48,                               "unit": "celsius" }, "name": "Engine oil temperature",         "suggestedMetric": "engineOilTemperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E002"}, "freq": 5,
   "signals": [
@@ -935,11 +939,11 @@
     {"id": "GENESIS_CYL_6_INJ_TIME_1ST",   "path": "Engine", "fmt": {"bix": 408, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Cylinder 6 injection time 1st pulse"},
     {"id": "GENESIS_CYCLE_FUEL_CONS",      "path": "Fuel",   "fmt": {"bix": 416, "len": 8,  "max": 21.6189,                     "mul": 8.478,        "div": 100,                               "unit": "unknown" },                     "name": "Cycle fuel consumption"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "E0F1"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E0F1"}, "freq": 1,
   "signals": [
-    {"id": "GENESIS_EOT_7E0_2",           "path": "Engine", "fmt": {"bix": 144, "len": 8, "max": 143,      "min": -48,  "mul": 3,      "div": 4,     "add": -48,  "unit": "celsius" }, "name": "Engine oil temperature"},
-    {"id": "GENESIS_EXH_GAS_VOLUME_FLOW", "path": "Engine", "fmt": {"bix": 240, "len": 8, "max": 2000,                  "mul": 78449,  "div": 10000,              "unit": "unknown" }, "name": "Exhaust gas volume flow"},
-    {"id": "GENESIS_DPF_DIFF_P",          "path": "Engine", "fmt": {"bix": 248, "len": 8, "max": 999.9935, "min": -100, "mul": 4.3137,               "add": -100, "unit": "unknown" }, "name": "Diesel particulate filter differential pressure"}
+    {"id": "GENESIS_EOT_7E0_2",           "path": "Engine", "fmt": {"bix": 144, "len": 8, "max": 143,  "min": -48,  "mul": 3,       "div": 4,     "add": -48,  "unit": "celsius" }, "name": "Engine oil temperature"},
+    {"id": "GENESIS_EXH_GAS_VOLUME_FLOW", "path": "Engine", "fmt": {"bix": 240, "len": 8, "max": 2000,              "mul": 78449,   "div": 10000,              "unit": "unknown" }, "name": "Exhaust gas volume flow"},
+    {"id": "GENESIS_DPF_DIFF_P",          "path": "Engine", "fmt": {"bix": 248, "len": 8, "max": 1000, "min": -100, "mul": 431.373, "div": 100,   "add": -100, "unit": "unknown" }, "name": "Diesel particulate filter differential pressure"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E0F2"}, "freq": 1,
   "signals": [
@@ -1044,10 +1048,10 @@
     {"id": "GENESIS_BAT_V",                  "path": "Battery",      "fmt": {"bix": 272, "len": 16, "max": 71.535,                    "mul": 10,    "div": 10000, "add": 6,                   "unit": "volts"       }, "name": "Battery voltage"},
     {"id": "GENESIS_BAT_T",                  "path": "Battery",      "fmt": {"bix": 288, "len": 16, "max": 32767.5,                                 "div": 2,                                 "unit": "celsius"     }, "name": "Battery temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "ED29"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED29"}, "freq": 1,
   "signals": [
-    {"id": "GENESIS_DPF_TOT_SULFUR_MASS", "path": "Engine", "fmt": { "len": 16, "max": 9999, "mul": 0.15259,                "unit": "unknown" }, "name": "Diesel particulate filter total sulfur mass"},
-    {"id": "GENESIS_TOT_SULFUR_MASS",     "path": "Engine", "fmt": { "len": 16, "max": 9999, "mul": 15259,   "div": 100000, "unit": "unknown" }, "name": "Total sulfur mass"}
+    {"id": "GENESIS_TOT_SULFUR_MASS",     "path": "Engine", "fmt": { "len": 16, "max": 9999, "mul": 15259,   "div": 100000, "unit": "unknown" }, "name": "Total sulfur mass"},
+    {"id": "GENESIS_DPF_TOT_SULFUR_MASS", "path": "Engine", "fmt": { "len": 16, "max": 9999, "mul": 0.15259,                "unit": "unknown" }, "name": "Diesel particulate filter total sulfur mass"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "ED94"}, "freq": 1,
   "signals": [
@@ -1461,7 +1465,7 @@
     {"id": "GENESIS_HVBAT_SOH_V2",       "path": "Battery", "fmt": {"bix": 200, "len": 16, "max": 100,                 "div": 10,               "unit": "percent" }, "name": "HV battery health",              "suggestedMetric": "stateOfHealth"},
     {"id": "GENESIS_MAX",                "path": "Engine",  "fmt": {"bix": 200, "len": 16, "max": 6553,                "div": 10,               "unit": "percent" }, "name": "Niro_maximum deterioration"},
     {"id": "GENESIS_HVBAT_DET_MAX_CELL", "path": "Battery", "fmt": {"bix": 216, "len": 8,  "max": 255,                                          "unit": "scalar"  }, "name": "Most deteriorated cell number"},
-    {"id": "GENESIS_HVBAT_DET_MIN",      "path": "Battery", "fmt": {"bix": 224, "len": 16, "max": 6553.5,              "div": 10,               "unit": "percent" }, "name": "Minimum cell deterioration"},
+    {"id": "GENESIS_HVBAT_DET_MIN_V2",   "path": "Battery", "fmt": {"bix": 224, "len": 16, "max": 6553.5,              "div": 10,               "unit": "percent" }, "name": "Minimum cell deterioration"},
     {"id": "GENESIS_MIN",                "path": "Engine",  "fmt": {"bix": 224, "len": 16, "max": 6553,                "div": 10,               "unit": "percent" }, "name": "Niro_minimum deterioration"},
     {"id": "GENESIS_HVBAT_DET_MIN_CELL", "path": "Battery", "fmt": {"bix": 240, "len": 8,  "max": 255,                                          "unit": "scalar"  }, "name": "Least deteriorated cell number"},
     {"id": "GENESIS_HVBAT_SOC_DISP_V2",  "path": "Battery", "fmt": {"bix": 248, "len": 8,  "max": 100,                 "div": 2,                "unit": "percent" }, "name": "HV battery charge, displayed",   "suggestedMetric": "stateOfCharge"}
@@ -1798,19 +1802,20 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0105"}, "freq": 1,
   "signals": [
-    {"id": "GENESIS_HVBAT_C_DEV_V",      "path": "Battery",             "fmt": {"bix": 160, "len": 8,  "max": 5.1,                          "div": 50,                                 "unit": "volts"         }, "name": "HV cell voltage deviation"},
-    {"id": "GENESIS_AIRBAG_DUTY",        "path": "Battery",             "fmt": {"bix": 176, "len": 8,  "max": 255,                                                                     "unit": "scalar"        }, "name": "Airbag hard-wire duty"},
-    {"id": "GENESIS_HVBAT_HTR1_T",       "path": "Battery",             "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,                          "sign": true,                 "unit": "celsius"       }, "name": "HV battery heater 1 temperature"},
-    {"id": "GENESIS_HVBAT_HTR2_T",       "path": "Battery",             "fmt": {"bix": 192, "len": 8,  "max": 127, "min": -127,                          "sign": true,                 "unit": "celsius"       }, "name": "HV battery heater 2 temperature"},
-    {"id": "GENESIS_HVBAT_SOH",          "path": "Battery",             "fmt": {"bix": 200, "len": 16, "max": 100,                          "div": 10,                                 "unit": "percent"       }, "name": "HV battery state of health",           "suggestedMetric": "stateOfHealth"},
-    {"id": "GENESIS_HVBAT_DET_MAX_ID",   "path": "Battery",             "fmt": {"bix": 216, "len": 8,  "max": 98,                                                      "nullmax": 200, "unit": "scalar"        }, "name": "HV battery max deterioration cell id"},
-    {"id": "GENESIS_HVBAT_WH",           "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,              "mul": 2,   "div": 1000,                               "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
-    {"id": "GENESIS_HVBAT_DET_MIN_2",    "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,                          "div": 10,                                 "unit": "percent"       }, "name": "HV battery min deterioration"},
-    {"id": "GENESIS_HVBAT_DET_MIN_ID",   "path": "Battery",             "fmt": {"bix": 240, "len": 8,  "max": 98,                                                      "nullmax": 200, "unit": "scalar"        }, "name": "HV battery min deterioration cell id"},
-    {"id": "GENESIS_HVBAT_SOC_DISP",     "path": "Battery",             "fmt": {"bix": 248, "len": 8,  "max": 100,                          "div": 2,                                  "unit": "percent"       }, "name": "HV battery charge",                    "suggestedMetric": "stateOfCharge"},
-    {"id": "GENESIS_HVBAT_SOC_DISP_7E4", "path": "Battery",             "fmt": {"bix": 248, "len": 8,  "max": 100,              "mul": 0.5,                                            "unit": "percent"       }, "name": "HV battery charge",                    "suggestedMetric": "stateOfCharge"},
-    {"id": "GENESIS_HVBAT_CMU097_VOLT",  "path": "Battery.Modules.097", "fmt": {"bix": 272, "len": 8,  "max": 4.2, "min": 2.8,              "div": 50,                                 "unit": "volts"         }, "name": "HV battery module 097 voltage"},
-    {"id": "GENESIS_HVBAT_CMU098_VOLT",  "path": "Battery.Modules.098", "fmt": {"bix": 280, "len": 8,  "max": 4.2, "min": 2.8,              "div": 50,                                 "unit": "volts"         }, "name": "HV battery module 098 voltage"}
+    {"id": "GENESIS_HVBAT_C_DEV_V",      "path": "Battery",             "fmt": {"bix": 160, "len": 8,  "max": 5.1,                             "div": 50,                                    "unit": "volts"         }, "name": "HV cell voltage deviation"},
+    {"id": "GENESIS_AIRBAG_DUTY",        "path": "Battery",             "fmt": {"bix": 176, "len": 8,  "max": 255,                                                                           "unit": "scalar"        }, "name": "Airbag hard-wire duty"},
+    {"id": "GENESIS_HVBAT_HTR1_T",       "path": "Battery",             "fmt": {"bix": 184, "len": 8,  "max": 127,    "min": -127,                          "sign": true,                    "unit": "celsius"       }, "name": "HV battery heater 1 temperature"},
+    {"id": "GENESIS_HVBAT_HTR2_T",       "path": "Battery",             "fmt": {"bix": 192, "len": 8,  "max": 127,    "min": -127,                          "sign": true,                    "unit": "celsius"       }, "name": "HV battery heater 2 temperature"},
+    {"id": "GENESIS_HVBAT_SOH",          "path": "Battery",             "fmt": {"bix": 200, "len": 16, "max": 100,                             "div": 10,                                    "unit": "percent"       }, "name": "HV battery state of health",           "suggestedMetric": "stateOfHealth"},
+    {"id": "GENESIS_HVBAT_DET_MAX_ID",   "path": "Battery",             "fmt": {"bix": 216, "len": 8,  "max": 98,                                                         "nullmax": 200,    "unit": "scalar"        }, "name": "HV battery max deterioration cell id"},
+    {"id": "GENESIS_HVBAT_WH",           "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,                 "mul": 2,   "div": 1000,                                  "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
+    {"id": "GENESIS_HVBAT_DET_MIN",      "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,                             "div": 10,                                    "unit": "percent"       }, "name": "HV battery min deterioration"},
+    {"id": "GENESIS_HVBAT_DET_MIN_2",    "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 131.07,              "mul": 2,   "div": 1000,               "nullmax": 131.07, "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
+    {"id": "GENESIS_HVBAT_DET_MIN_ID",   "path": "Battery",             "fmt": {"bix": 240, "len": 8,  "max": 98,                                                         "nullmax": 200,    "unit": "scalar"        }, "name": "HV battery min deterioration cell id"},
+    {"id": "GENESIS_HVBAT_SOC_DISP",     "path": "Battery",             "fmt": {"bix": 248, "len": 8,  "max": 100,                             "div": 2,                                     "unit": "percent"       }, "name": "HV battery charge",                    "suggestedMetric": "stateOfCharge"},
+    {"id": "GENESIS_HVBAT_SOC_DISP_7E4", "path": "Battery",             "fmt": {"bix": 248, "len": 8,  "max": 100,                 "mul": 0.5,                                               "unit": "percent"       }, "name": "HV battery charge",                    "suggestedMetric": "stateOfCharge"},
+    {"id": "GENESIS_HVBAT_CMU097_VOLT",  "path": "Battery.Modules.097", "fmt": {"bix": 272, "len": 8,  "max": 4.2,    "min": 2.8,              "div": 50,                                    "unit": "volts"         }, "name": "HV battery module 097 voltage"},
+    {"id": "GENESIS_HVBAT_CMU098_VOLT",  "path": "Battery.Modules.098", "fmt": {"bix": 280, "len": 8,  "max": 4.2,    "min": 2.8,              "div": 50,                                    "unit": "volts"         }, "name": "HV battery module 098 voltage"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0106"}, "freq": 5,
   "signals": [
