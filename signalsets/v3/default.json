@@ -14,18 +14,20 @@
   "commands": [
 { "hdr": "730", "rax": "738", "dbg": true, "cmd": {"22": "F010"}, "freq": 0.25,
   "signals": [
-    {"id": "GENESIS_WHEEL_FR_VSS_HD",           "path": "Movement",    "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                             "unit": "kilometersPerHour"      },                                                  "name": "Front right wheel speed, high resolution"},
-    {"id": "GENESIS_WHEEL_FR_VSS_HD_26",        "path": "Movement",    "fmt": {"bix": 32,  "len": 16, "max": 2047,                                 "div": 32,                                               "unit": "kilometersPerHour" },                               "name": "Front right wheel speed, high resolution"},
-    {"id": "GENESIS_WHEEL_FL_VSS_HD",           "path": "Movement",    "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                             "unit": "kilometersPerHour"      },                                                  "name": "Front left wheel speed, high resolution"},
-    {"id": "GENESIS_WHEEL_FL_VSS_HD_26",        "path": "Movement",    "fmt": {"bix": 48,  "len": 16, "max": 2047,                                 "div": 32,                                               "unit": "kilometersPerHour" },                               "name": "Front left wheel speed, high resolution"},
-    {"id": "GENESIS_WHEEL_RR_VSS_HD",           "path": "Movement",    "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                             "unit": "kilometersPerHour"      },                                                  "name": "Rear right wheel speed, high resolution"},
-    {"id": "GENESIS_WHEEL_RR_VSS_HD_26",        "path": "Movement",    "fmt": {"bix": 64,  "len": 16, "max": 2047,                                 "div": 32,                                               "unit": "kilometersPerHour" },                               "name": "Rear right wheel speed, high resolution"},
-    {"id": "GENESIS_WHEEL_RL_VSS_HD",           "path": "Movement",    "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                             "unit": "kilometersPerHour"      },                                                  "name": "Rear left wheel speed, high resolution"},
-    {"id": "GENESIS_WHEEL_RL_VSS_HD_26",        "path": "Movement",    "fmt": {"bix": 80,  "len": 16, "max": 2047,                                 "div": 32,                                               "unit": "kilometersPerHour" },                               "name": "Rear left wheel speed, high resolution"},
-    {"id": "GENESIS_STEERING_ANGLE",            "path": "Control",     "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 3276.7, "min": -3276.8,               "div": 10,                   "sign": true,                             "unit": "degrees"                },                                                  "name": "Steering wheel angle"},
-    {"id": "GENESIS_LATERAL_ACCELERATION",      "path": "Orientation", "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 4.177,  "min": -4.177,  "mul": 8.354, "div": 65535, "add": -4.177,                                           "unit": "metersPerSecondSquared" },                                                  "name": "Lateral acceleration"},
-    {"id": "GENESIS_LONGITUDINAL_ACCELERATION", "path": "Orientation", "fmt": {"bix": 128, "len": 16, "blsb": true, "max": 4.177,  "min": -4.177,  "mul": 8.354, "div": 65535, "add": -4.177,                                           "unit": "metersPerSecondSquared" },                                                  "name": "Longitudinal acceleration"},
-    {"id": "GENESIS_YAW_RATE",                  "path": "Orientation", "fmt": {"bix": 144, "len": 8,  "max": 1.275,                                "div": 200,                                              "unit": "degrees"           },                               "name": "Yaw rate"}
+    {"id": "GENESIS_WHEEL_FR_VSS_HD",              "path": "Movement",    "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                             "unit": "kilometersPerHour"      },                                                  "name": "Front right wheel speed, high resolution"},
+    {"id": "GENESIS_WHEEL_FR_VSS_HD_26",           "path": "Movement",    "fmt": {"bix": 32,  "len": 16, "max": 2047,                                 "div": 32,                                               "unit": "kilometersPerHour" },                               "name": "Front right wheel speed, high resolution"},
+    {"id": "GENESIS_WHEEL_FL_VSS_HD",              "path": "Movement",    "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                             "unit": "kilometersPerHour"      },                                                  "name": "Front left wheel speed, high resolution"},
+    {"id": "GENESIS_WHEEL_FL_VSS_HD_26",           "path": "Movement",    "fmt": {"bix": 48,  "len": 16, "max": 2047,                                 "div": 32,                                               "unit": "kilometersPerHour" },                               "name": "Front left wheel speed, high resolution"},
+    {"id": "GENESIS_WHEEL_RR_VSS_HD",              "path": "Movement",    "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                             "unit": "kilometersPerHour"      },                                                  "name": "Rear right wheel speed, high resolution"},
+    {"id": "GENESIS_WHEEL_RR_VSS_HD_26",           "path": "Movement",    "fmt": {"bix": 64,  "len": 16, "max": 2047,                                 "div": 32,                                               "unit": "kilometersPerHour" },                               "name": "Rear right wheel speed, high resolution"},
+    {"id": "GENESIS_WHEEL_RL_VSS_HD",              "path": "Movement",    "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                             "unit": "kilometersPerHour"      },                                                  "name": "Rear left wheel speed, high resolution"},
+    {"id": "GENESIS_WHEEL_RL_VSS_HD_26",           "path": "Movement",    "fmt": {"bix": 80,  "len": 16, "max": 2047,                                 "div": 32,                                               "unit": "kilometersPerHour" },                               "name": "Rear left wheel speed, high resolution"},
+    {"id": "GENESIS_STEERING_ANGLE",               "path": "Control",     "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 3276.7, "min": -3276.8,               "div": 10,                   "sign": true,                             "unit": "degrees"                },                                                  "name": "Steering wheel angle"},
+    {"id": "GENESIS_LATERAL_ACCELERATION",         "path": "Orientation", "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 4.1769, "min": -4.1769, "mul": 8.354, "div": 65535, "add": -4.177,                                           "unit": "metersPerSecondSquared" },                                                  "name": "Lateral acceleration"},
+    {"id": "GENESIS_LATERAL_ACCELERATION_26",      "path": "Orientation", "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 4.177,  "min": -4.177,  "mul": 8.354, "div": 65535, "add": -4.177,                                           "unit": "metersPerSecondSquared" },                                                  "name": "Lateral acceleration"},
+    {"id": "GENESIS_LONGITUDINAL_ACCELERATION",    "path": "Orientation", "fmt": {"bix": 128, "len": 16, "blsb": true, "max": 4.1769, "min": -4.1769, "mul": 8.354, "div": 65535, "add": -4.177,                                           "unit": "metersPerSecondSquared" },                                                  "name": "Longitudinal acceleration"},
+    {"id": "GENESIS_LONGITUDINAL_ACCELERATION_26", "path": "Orientation", "fmt": {"bix": 128, "len": 16, "blsb": true, "max": 4.177,  "min": -4.177,  "mul": 8.354, "div": 65535, "add": -4.177,                                           "unit": "metersPerSecondSquared" },                                                  "name": "Longitudinal acceleration"},
+    {"id": "GENESIS_YAW_RATE",                     "path": "Orientation", "fmt": {"bix": 144, "len": 8,  "max": 1.275,                                "div": 200,                                              "unit": "degrees"           },                               "name": "Yaw rate"}
   ]},
 { "hdr": "740", "dbg": true, "cmd": {"21": "C0"}, "freq": 5,
   "signals": [
@@ -128,26 +130,26 @@
   ]},
 { "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC03"}, "freq": 2,
   "signals": [
-    {"id": "GENESIS_TRUNK",          "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Trunk open?"},
-    {"id": "GENESIS_DOOR_FL",        "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Front left door open?"},
-    {"id": "GENESIS_DOOR_FR",        "path": "Doors",     "fmt": {"bix": 35, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Front right door open?"},
-    {"id": "GENESIS_HANDBRAKE",      "path": "Control",   "fmt": {"bix": 36, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Handbrake engaged?"},
-    {"id": "GENESIS_DOOR_RR",        "path": "Doors",     "fmt": {"bix": 37, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Rear right door open?"},
-    {"id": "GENESIS_DOOR_RL",        "path": "Doors",     "fmt": {"bix": 39, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Rear left door open?"},
-    {"id": "GENESIS_BELT_PASSENGER", "path": "Seatbelts", "fmt": {"bix": 45, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Passenger seatbelt latched?"},
-    {"id": "GENESIS_BELT_DRIVER",    "path": "Seatbelts", "fmt": {"bix": 46, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Driver seatbelt latched?"},
-    {"id": "GENESIS_HOOD",           "path": "Doors",     "fmt": {"bix": 47, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Hood latched?"},
-    {"id": "GENESIS_LOW_BEAMS",      "path": "Lights",    "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "scalar" }, "name": "Low beams"},
-    {"id": "GENESIS_DEFOG_SW",       "path": "Climate",   "fmt": {"bix": 62, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Defogging?"}
+    {"id": "GENESIS_TRUNK",     "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Trunk open?"},
+    {"id": "GENESIS_DOOR_FL",   "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Front left door open?"},
+    {"id": "GENESIS_DOOR_FR",   "path": "Doors",     "fmt": {"bix": 35, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Front right door open?"},
+    {"id": "GENESIS_HANDBRAKE", "path": "Control",   "fmt": {"bix": 36, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Handbrake engaged?"},
+    {"id": "GENESIS_DOOR_RR",   "path": "Doors",     "fmt": {"bix": 37, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Rear right door open?"},
+    {"id": "GENESIS_DOOR_RL",   "path": "Doors",     "fmt": {"bix": 39, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Rear left door open?"},
+    {"id": "GENESIS_BELT_PASS", "path": "Seatbelts", "fmt": {"bix": 45, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Passenger seatbelt latched?"},
+    {"id": "GENESIS_BELT_DRIV", "path": "Seatbelts", "fmt": {"bix": 46, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Driver seatbelt latched?"},
+    {"id": "GENESIS_HOOD",      "path": "Doors",     "fmt": {"bix": 47, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Hood latched?"},
+    {"id": "GENESIS_LOW_BEAMS", "path": "Lights",    "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "scalar" }, "name": "Low beams"},
+    {"id": "GENESIS_DEFOG_SW",  "path": "Climate",   "fmt": {"bix": 62, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Defogging?"}
   ]},
 { "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC04"}, "freq": 2,
   "signals": [
-    {"id": "GENESIS_REVERSE_GEAR", "path": "Transmission", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"},
-    {"id": "GENESIS_LOCK_FL",      "path": "Doors",        "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front left door locked?"},
-    {"id": "GENESIS_LOCK_FR",      "path": "Doors",        "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front right door locked?"},
-    {"id": "GENESIS_BELT_RM",      "path": "Seatbelts",    "fmt": {"bix": 52, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear middle seatbelt latched?"},
-    {"id": "GENESIS_BELT_RL",      "path": "Seatbelts",    "fmt": {"bix": 53, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear left seatbelt latched?"},
-    {"id": "GENESIS_BELT_RR",      "path": "Seatbelts",    "fmt": {"bix": 54, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear right seatbelt latched?"}
+    {"id": "GENESIS_GEAR_R",  "path": "Transmission", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"},
+    {"id": "GENESIS_LOCK_FL", "path": "Doors",        "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front left door locked?"},
+    {"id": "GENESIS_LOCK_FR", "path": "Doors",        "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front right door locked?"},
+    {"id": "GENESIS_BELT_RM", "path": "Seatbelts",    "fmt": {"bix": 52, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear middle seatbelt latched?"},
+    {"id": "GENESIS_BELT_RL", "path": "Seatbelts",    "fmt": {"bix": 53, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear left seatbelt latched?"},
+    {"id": "GENESIS_BELT_RR", "path": "Seatbelts",    "fmt": {"bix": 54, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear right seatbelt latched?"}
   ]},
 { "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC05"}, "freq": 2,
   "signals": [
@@ -333,9 +335,11 @@
     {"id": "GENESIS_CRUZ_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,      "div": 2,                  "nullmax": 127.5, "unit": "liters"     }, "name": "Fuel level, volume", "suggestedMetric": "fuelTankLevel"},
     {"id": "GENESIS_CLUSTER_VOLTAGE",      "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,         "div": 12.8,                                 "unit": "volts"      }, "name": "Cluster voltage",    "suggestedMetric": "starterBatteryVoltage"},
     {"id": "GENESIS_CRUZ_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,         "div": 12.8,                                 "unit": "volts"      }, "name": "Cluster voltage"},
-    {"id": "GENESIS_ODO_KM",               "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,                "nullmin": 0,                   "unit": "kilometers" }, "name": "Odometer, metric",   "suggestedMetric": "odometer"},
+    {"id": "GENESIS_ODO_KM",               "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,                                                "unit": "kilometers" }, "name": "Odometer, metric",   "suggestedMetric": "odometer"},
     {"id": "GENESIS_ODO",                  "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 4294967295,                                              "unit": "kilometers" }, "name": "Odometer",           "suggestedMetric": "odometer"},
-    {"id": "GENESIS_ODO_MI",               "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,                "nullmin": 0,                   "unit": "miles"      }, "name": "Odometer, imperial", "suggestedMetric": "odometer"}
+    {"id": "GENESIS_CRUZ_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,                "nullmin": 0,                   "unit": "kilometers" }, "name": "Odometer, metric",   "suggestedMetric": "odometer"},
+    {"id": "GENESIS_ODO_MI",               "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,                                                "unit": "miles"      }, "name": "Odometer, imperial", "suggestedMetric": "odometer"},
+    {"id": "GENESIS_CRUZ_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,                "nullmin": 0,                   "unit": "miles"      }, "name": "Odometer, imperial", "suggestedMetric": "odometer"}
   ]},
 { "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
   "signals": [
@@ -379,6 +383,29 @@
     {"id": "GENESIS_RL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
     {"id": "GENESIS_RR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "C104"}, "freq": 15,
+  "signals": [
+    {"id": "GENESIS_TPMS_LATEST",            "path": "Trips", "fmt": {"bix": 64,  "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor latest deflation odometer"},
+    {"id": "GENESIS_TPMS_DEFLATION_ODO_1",   "path": "Trips", "fmt": {"bix": 96,  "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor deflation odometer history 1"},
+    {"id": "GENESIS_TPMS_DEFLATION_ODO_2",   "path": "Trips", "fmt": {"bix": 128, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor deflation odometer history 2"},
+    {"id": "GENESIS_TPMS_DEFLATION_ODO_3",   "path": "Trips", "fmt": {"bix": 160, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor deflation odometer history 3"},
+    {"id": "GENESIS_TPMS_DEFLATION_ODO_4",   "path": "Trips", "fmt": {"bix": 192, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor deflation odometer history 4"},
+    {"id": "GENESIS_TPMS_DEFLATION_ODO_5",   "path": "Trips", "fmt": {"bix": 224, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor deflation odometer history 5"},
+    {"id": "GENESIS_TPMS_DEFLATION_ODO_6",   "path": "Trips", "fmt": {"bix": 256, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor deflation odometer history 6"},
+    {"id": "GENESIS_TPMS_DEFLATION_ODO_7",   "path": "Trips", "fmt": {"bix": 288, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor deflation odometer history 7"},
+    {"id": "GENESIS_TPMS_DEFLATION_ODO_8",   "path": "Trips", "fmt": {"bix": 320, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor deflation odometer history 8"},
+    {"id": "GENESIS_TPMS_DEFLATION_ODO_9",   "path": "Trips", "fmt": {"bix": 352, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor deflation odometer history 9"},
+    {"id": "GENESIS_TPMS_LATEST_SET_ODO",    "path": "Trips", "fmt": {"bix": 384, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor latest set odometer"},
+    {"id": "GENESIS_TPMS_SET_ODO_HISTORY_1", "path": "Trips", "fmt": {"bix": 416, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor set odometer history 1"},
+    {"id": "GENESIS_TPMS_SET_ODO_HISTORY_2", "path": "Trips", "fmt": {"bix": 448, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor set odometer history 2"},
+    {"id": "GENESIS_TPMS_SET_ODO_HISTORY_3", "path": "Trips", "fmt": {"bix": 480, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor set odometer history 3"},
+    {"id": "GENESIS_TPMS_SET_ODO_HISTORY_4", "path": "Trips", "fmt": {"bix": 512, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor set odometer history 4"},
+    {"id": "GENESIS_TPMS_SET_ODO_HISTORY_5", "path": "Trips", "fmt": {"bix": 544, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor set odometer history 5"},
+    {"id": "GENESIS_TPMS_SET_ODO_HISTORY_6", "path": "Trips", "fmt": {"bix": 576, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor set odometer history 6"},
+    {"id": "GENESIS_TPMS_SET_ODO_HISTORY_7", "path": "Trips", "fmt": {"bix": 608, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor set odometer history 7"},
+    {"id": "GENESIS_TPMS_SET_ODO_HISTORY_8", "path": "Trips", "fmt": {"bix": 640, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor set odometer history 8"},
+    {"id": "GENESIS_TPMS_SET_ODO_HISTORY_9", "path": "Trips", "fmt": {"bix": 672, "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Tire pressure monitor set odometer history 9"}
+  ]},
 { "hdr": "7D4", "rax": "7DC", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
   "signals": [
     {"id": "GENESIS_STEER_ANGLE_V2_V2", "path": "Control", "fmt": {"bix": 24, "len": 16, "max": 3276.7, "min": -3276.8, "mul": 10, "div": 100, "sign": true, "unit": "degrees" }, "name": "Steering angle"},
@@ -388,8 +415,8 @@
   "signals": [
     {"id": "GENESIS_BMS_SOC",            "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                    "div": 2,                 "unit": "percent"   }, "name": "State of charge"},
     {"id": "GENESIS_BMS_CHG_PWR",        "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 655.35,                 "div": 100,               "unit": "kilowatts" }, "name": "Available charge power"},
-    {"id": "GENESIS_WHEEL_ANGLE_ABS",    "path": "Tires",   "fmt": {"bix": 56,  "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,  "sign": true, "unit": "degrees"   }, "name": "Wheel turn angle, absolute"},
     {"id": "GENESIS_BMS_DISCHG_PWR",     "path": "Battery", "fmt": {"bix": 56,  "len": 16, "max": 655.35,                 "div": 100,               "unit": "kilowatts" }, "name": "Available discharge power"},
+    {"id": "GENESIS_WHEEL_ANGLE_ABS",    "path": "Tires",   "fmt": {"bix": 56,  "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,  "sign": true, "unit": "degrees"   }, "name": "Wheel turn angle, absolute"},
     {"id": "GENESIS_MDPS_MOTOR_CURRENT", "path": "Engine",  "fmt": {"bix": 88,  "len": 8,  "max": 127,    "min": -128,                "sign": true, "unit": "amps"      }, "name": "Motor-driven power steering current"},
     {"id": "GENESIS_BMS_MIN_TEMP",       "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 80,     "min": -40,                 "sign": true, "unit": "celsius"   }, "name": "Battery min temp"},
     {"id": "GENESIS_BMS_MOD1_TEMP",      "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 80,     "min": -40,                 "sign": true, "unit": "celsius"   }, "name": "Battery mod 1 temp"},
@@ -399,22 +426,22 @@
   ]},
 { "hdr": "7D6", "rax": "7DE", "dbg": true, "cmd": {"21": "06"}, "freq": 15,
   "signals": [
-    {"id": "GENESIS_FL_TP", "path": "Tires", "fmt": {            "len": 8,  "max": 3.51,                  "mul": 0.01378952,                                      "unit": "bars"       }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "GENESIS_TP_1",  "path": "Tires", "fmt": {            "len": 16, "max": 6553.5,                                   "div": 10,                           "unit": "kilopascal" }, "name": "Sensor 1 pressure"},
-    {"id": "GENESIS_FL_TT", "path": "Tires", "fmt": {"bix": 8,   "len": 8,  "max": 205,    "min": -50,                                  "add": -50,               "unit": "celsius"    }, "name": "Front left tire temperature",  "suggestedMetric": "frontLeftTireTemperature"},
-    {"id": "GENESIS_TT_1",  "path": "Tires", "fmt": {"bix": 16,  "len": 16, "max": 32767,  "min": -32768,                                           "sign": true, "unit": "celsius"    }, "name": "Sensor 1 temperature"},
-    {"id": "GENESIS_FR_TP", "path": "Tires", "fmt": {"bix": 32,  "len": 8,  "max": 3.51,                  "mul": 0.01378952,                                      "unit": "bars"       }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
-    {"id": "GENESIS_FR_TT", "path": "Tires", "fmt": {"bix": 40,  "len": 8,  "max": 205,    "min": -50,                                  "add": -50,               "unit": "celsius"    }, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"},
-    {"id": "GENESIS_TP_2",  "path": "Tires", "fmt": {"bix": 48,  "len": 16, "max": 6553.5,                                   "div": 10,                           "unit": "kilopascal" }, "name": "Sensor 2 pressure"},
-    {"id": "GENESIS_RL_TP", "path": "Tires", "fmt": {"bix": 64,  "len": 8,  "max": 3.51,                  "mul": 0.01378952,                                      "unit": "bars"       }, "name": "Rear left tire pressure",      "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "GENESIS_TT_2",  "path": "Tires", "fmt": {"bix": 64,  "len": 16, "max": 32767,  "min": -32768,                                           "sign": true, "unit": "celsius"    }, "name": "Sensor 2 temperature"},
-    {"id": "GENESIS_RL_TT", "path": "Tires", "fmt": {"bix": 72,  "len": 8,  "max": 205,    "min": -50,                                  "add": -50,               "unit": "celsius"    }, "name": "Rear left tire temperature",   "suggestedMetric": "rearLeftTireTemperature"},
-    {"id": "GENESIS_RR_TP", "path": "Tires", "fmt": {"bix": 96,  "len": 8,  "max": 3.51,                  "mul": 0.01378952,                                      "unit": "bars"       }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
-    {"id": "GENESIS_TP_3",  "path": "Tires", "fmt": {"bix": 96,  "len": 16, "max": 6553.5,                                   "div": 10,                           "unit": "kilopascal" }, "name": "Sensor 3 pressure"},
-    {"id": "GENESIS_RR_TT", "path": "Tires", "fmt": {"bix": 104, "len": 8,  "max": 205,    "min": -50,                                  "add": -50,               "unit": "celsius"    }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"},
-    {"id": "GENESIS_TT_3",  "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 32767,  "min": -32768,                                           "sign": true, "unit": "celsius"    }, "name": "Sensor 3 temperature"},
-    {"id": "GENESIS_TP_4",  "path": "Tires", "fmt": {"bix": 144, "len": 16, "max": 6553.5,                                   "div": 10,                           "unit": "kilopascal" }, "name": "Sensor 4 pressure"},
-    {"id": "GENESIS_TT_4",  "path": "Tires", "fmt": {"bix": 160, "len": 16, "max": 32767,  "min": -32768,                                           "sign": true, "unit": "celsius"    }, "name": "Sensor 4 temperature"}
+    {"id": "GENESIS_FL_TP", "path": "Tires",  "fmt": {            "len": 8,  "max": 3.51,                  "mul": 0.01378952,                                      "unit": "bars"       }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "GENESIS_TP_1",  "path": "Tires",  "fmt": {            "len": 16, "max": 6553.5,                                   "div": 10,                           "unit": "kilopascal" }, "name": "Sensor 1 pressure"},
+    {"id": "GENESIS_FL_TT", "path": "Engine", "fmt": {"bix": 8,   "len": 8,  "max": 205,    "min": -50,                                  "add": -50,               "unit": "celsius"    }, "name": "Front left tire temperature",  "suggestedMetric": "frontLeftTireTemperature"},
+    {"id": "GENESIS_TT_1",  "path": "Tires",  "fmt": {"bix": 16,  "len": 16, "max": 32767,  "min": -32768,                                           "sign": true, "unit": "celsius"    }, "name": "Sensor 1 temperature"},
+    {"id": "GENESIS_FR_TP", "path": "Tires",  "fmt": {"bix": 32,  "len": 8,  "max": 3.51,                  "mul": 0.01378952,                                      "unit": "bars"       }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "GENESIS_FR_TT", "path": "Engine", "fmt": {"bix": 40,  "len": 8,  "max": 205,    "min": -50,                                  "add": -50,               "unit": "celsius"    }, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"},
+    {"id": "GENESIS_TP_2",  "path": "Tires",  "fmt": {"bix": 48,  "len": 16, "max": 6553.5,                                   "div": 10,                           "unit": "kilopascal" }, "name": "Sensor 2 pressure"},
+    {"id": "GENESIS_RL_TP", "path": "Tires",  "fmt": {"bix": 64,  "len": 8,  "max": 3.51,                  "mul": 0.01378952,                                      "unit": "bars"       }, "name": "Rear left tire pressure",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "GENESIS_TT_2",  "path": "Tires",  "fmt": {"bix": 64,  "len": 16, "max": 32767,  "min": -32768,                                           "sign": true, "unit": "celsius"    }, "name": "Sensor 2 temperature"},
+    {"id": "GENESIS_RL_TT", "path": "Engine", "fmt": {"bix": 72,  "len": 8,  "max": 205,    "min": -50,                                  "add": -50,               "unit": "celsius"    }, "name": "Rear left tire temperature",   "suggestedMetric": "rearLeftTireTemperature"},
+    {"id": "GENESIS_RR_TP", "path": "Tires",  "fmt": {"bix": 96,  "len": 8,  "max": 3.51,                  "mul": 0.01378952,                                      "unit": "bars"       }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "GENESIS_TP_3",  "path": "Tires",  "fmt": {"bix": 96,  "len": 16, "max": 6553.5,                                   "div": 10,                           "unit": "kilopascal" }, "name": "Sensor 3 pressure"},
+    {"id": "GENESIS_RR_TT", "path": "Engine", "fmt": {"bix": 104, "len": 8,  "max": 205,    "min": -50,                                  "add": -50,               "unit": "celsius"    }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"},
+    {"id": "GENESIS_TT_3",  "path": "Tires",  "fmt": {"bix": 112, "len": 16, "max": 32767,  "min": -32768,                                           "sign": true, "unit": "celsius"    }, "name": "Sensor 3 temperature"},
+    {"id": "GENESIS_TP_4",  "path": "Tires",  "fmt": {"bix": 144, "len": 16, "max": 6553.5,                                   "div": 10,                           "unit": "kilopascal" }, "name": "Sensor 4 pressure"},
+    {"id": "GENESIS_TT_4",  "path": "Tires",  "fmt": {"bix": 160, "len": 16, "max": 32767,  "min": -32768,                                           "sign": true, "unit": "celsius"    }, "name": "Sensor 4 temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "00"}, "freq": 1,
   "signals": [
@@ -692,7 +719,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "21A0"}, "freq": 10,
   "signals": [
-    {"id": "GENESIS_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
+    {"id": "GENESIS_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E001"}, "freq": 2,
   "signals": [
@@ -704,7 +731,7 @@
     {"id": "GENESIS_IAT",                         "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143,                                  "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Intake air temperature"},
     {"id": "GENESIS_EIT",                         "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143,        "min": -48, "mul": 3,     "div": 4,      "add": -48,                               "unit": "celsius" }, "name": "Intake air temperature"},
     {"id": "GENESIS_INTAKE_TEMP",                 "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143.254781,                           "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Intake Air Temperature"},
-    {"id": "GENESIS_EOT",                         "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143,                                  "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Engine oil temperature",         "suggestedMetric": "engineOilTemperature"},
+    {"id": "GENESIS_EOT",                         "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143,                                  "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Engine oil temperature"},
     {"id": "GENESIS_EOT_7E0",                     "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143,        "min": -48, "mul": 3,     "div": 4,      "add": -48,                               "unit": "celsius" }, "name": "Engine oil temperature"},
     {"id": "GENESIS_OIL_TEMP",                    "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143.254781,                           "div": 1.3333, "add": -48,                               "unit": "celsius" }, "name": "Engine Oil Temperature",         "suggestedMetric": "engineOilTemperature"},
     {"id": "GENESIS_EOT_26",                      "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143,        "min": -48, "mul": 3,     "div": 4,      "add": -48,                               "unit": "celsius" }, "name": "Engine oil temperature",         "suggestedMetric": "engineOilTemperature"}
@@ -729,7 +756,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E004"}, "freq": 5,
   "signals": [
-    {"id": "GENESIS_E004_BYTE0",         "path": "Engine.Unknown", "fmt": {            "len": 8, "max": 100,               "unit": "scalar"  }, "name": "Engine status byte"},
+    {"id": "GENESIS_22E004",             "path": "Engine.Unknown", "fmt": {            "len": 8, "max": 100,               "unit": "scalar"  }, "name": "Unknown"},
     {"id": "GENESIS_FUEL_CUT_7E0",       "path": "Fuel",           "fmt": {"bix": 64,  "len": 8, "max": 255,               "unit": "scalar"  }, "name": "Fuel cut"},
     {"id": "GENESIS_WIDE_OPEN_THROTTLE", "path": "Engine",         "fmt": {"bix": 72,  "len": 8, "max": 255,               "unit": "scalar"  }, "name": "Wide open throttle"},
     {"id": "GENESIS_KNOCK_DETECTED_7E0", "path": "Engine",         "fmt": {"bix": 168, "len": 8, "max": 255,               "unit": "scalar"  }, "name": "Knock detected"},
@@ -753,25 +780,22 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E007"}, "freq": 30,
   "signals": [
-    {"id": "GENESIS_FLI_INPUT",         "path": "Fuel",   "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 6553,           "div": 10,    "nullmax": 6553, "unit": "liters" }, "name": "Fuel level input"},
-    {"id": "GENESIS_CRUZ_FLI_INPUT",    "path": "Fuel",   "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 6553,           "div": 10,                     "unit": "liters" }, "name": "Fuel level input"},
-    {"id": "GENESIS_INJ_CORR_FACTOR_1", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535,                  "unit": "scalar" }, "name": "Injector correction factor 1"},
-    {"id": "GENESIS_INJ_CORR_FACTOR_2", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535,                  "unit": "scalar" }, "name": "Injector correction factor 2"},
-    {"id": "GENESIS_INJ_CORR_FACTOR_3", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535,                  "unit": "scalar" }, "name": "Injector correction factor 3"},
-    {"id": "GENESIS_INJ_CORR_FACTOR_4", "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535,                  "unit": "scalar" }, "name": "Injector correction factor 4"}
+    {"id": "GENESIS_FLI_INPUT",         "path": "Fuel",   "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 6553,           "div": 10,    "unit": "liters" }, "name": "Fuel level input"},
+    {"id": "GENESIS_INJ_CORR_FACTOR_1", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Injector correction factor 1"},
+    {"id": "GENESIS_INJ_CORR_FACTOR_2", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Injector correction factor 2"},
+    {"id": "GENESIS_INJ_CORR_FACTOR_3", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Injector correction factor 3"},
+    {"id": "GENESIS_INJ_CORR_FACTOR_4", "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Injector correction factor 4"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E009"}, "freq": 30,
   "signals": [
-    {"id": "GENESIS_GPF_INLET_T_SENS_RAW_V",      "path": "Battery", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 319,     "mul": 21333, "div": 4369000,                                   "unit": "volts"      },                                                  "name": "Gasoline particulate filter inlet temperature sensor raw voltage"},
-    {"id": "GENESIS_GPF_OUTLET_T_SENS_V",         "path": "Battery", "fmt": {"bix": 272, "len": 16, "blsb": true, "max": 319,     "mul": 21333, "div": 4369000,                                   "unit": "volts"      },                                                  "name": "Gasoline particulate filter outlet temperature sensor raw voltage"},
-    {"id": "GENESIS_EXH_GAS_T_BEFORE_GPF_1",      "path": "Engine",  "fmt": {"bix": 288, "len": 16, "blsb": true, "max": 6291,    "mul": 12,    "div": 125,     "nullmax": 6291,                  "unit": "celsius"    },                                                  "name": "Exhaust gas temperature before gasoline particulate filter sensor 1"},
-    {"id": "GENESIS_CRUZ_EXH_GAS_T_BEFORE_GPF_1", "path": "Engine",  "fmt": {"bix": 288, "len": 16, "blsb": true, "max": 6291,    "mul": 12,    "div": 125,                                       "unit": "celsius"    },                                                  "name": "Exhaust gas temperature before gasoline particulate filter sensor 1"},
-    {"id": "GENESIS_EXH_GAS_T_BEFORE_GPF_2",      "path": "Engine",  "fmt": {"bix": 304, "len": 16, "blsb": true, "max": 6291,    "mul": 12,    "div": 125,     "nullmax": 6291,                  "unit": "celsius"    },                                                  "name": "Exhaust gas temperature before gasoline particulate filter sensor 2"},
-    {"id": "GENESIS_CRUZ_EXH_GAS_T_BEFORE_GPF_2", "path": "Engine",  "fmt": {"bix": 304, "len": 16, "blsb": true, "max": 6291,    "mul": 12,    "div": 125,                                       "unit": "celsius"    },                                                  "name": "Exhaust gas temperature before gasoline particulate filter sensor 2"},
-    {"id": "GENESIS_GPF_CHG_ST",                  "path": "Battery", "fmt": {"bix": 320, "len": 8,  "max": 255,                                                                  "unit": "scalar" },                   "name": "Gasoline particulate filter charge state"},
-    {"id": "GENESIS_ODO_LAST_GPF_REGEN",          "path": "Trips",   "fmt": {"bix": 328, "len": 32, "blsb": true, "max": 4294967,               "div": 1000,                                      "unit": "kilometers" },                                                  "name": "Odometer at last gasoline particulate filter regeneration"},
-    {"id": "GENESIS_DIST_SINCE_GPF_REGEN",        "path": "Trips",   "fmt": {"bix": 360, "len": 32, "blsb": true, "max": 4294967,               "div": 1000,                                      "unit": "kilometers" },                                                  "name": "Distance since last gasoline particulate filter regeneration"},
-    {"id": "GENESIS_COVERAGE_DRIVEN",             "path": "Engine",  "fmt": {"bix": 392, "len": 32, "blsb": true, "max": 4294967,               "div": 1000,                                      "unit": "kilometers" },                                                  "name": "Coverage driven length"}
+    {"id": "GENESIS_GPF_INLET_T_SENS_RAW_V", "path": "Battery", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 319,     "mul": 21333, "div": 4369000,                  "unit": "volts"      },                                                  "name": "Gasoline particulate filter inlet temperature sensor raw voltage"},
+    {"id": "GENESIS_GPF_OUTLET_T_SENS_V",    "path": "Battery", "fmt": {"bix": 272, "len": 16, "blsb": true, "max": 319,     "mul": 21333, "div": 4369000,                  "unit": "volts"      },                                                  "name": "Gasoline particulate filter outlet temperature sensor raw voltage"},
+    {"id": "GENESIS_EXH_GAS_T_BEFORE_GPF_1", "path": "Engine",  "fmt": {"bix": 288, "len": 16, "blsb": true, "max": 6291,    "mul": 12,    "div": 125,                      "unit": "celsius"    },                                                  "name": "Exhaust gas temperature before gasoline particulate filter sensor 1"},
+    {"id": "GENESIS_EXH_GAS_T_BEFORE_GPF_2", "path": "Engine",  "fmt": {"bix": 304, "len": 16, "blsb": true, "max": 6291,    "mul": 12,    "div": 125,                      "unit": "celsius"    },                                                  "name": "Exhaust gas temperature before gasoline particulate filter sensor 2"},
+    {"id": "GENESIS_GPF_CHG_ST",             "path": "Battery", "fmt": {"bix": 320, "len": 8,  "max": 255,                                                 "unit": "scalar" },                   "name": "Gasoline particulate filter charge state"},
+    {"id": "GENESIS_ODO_LAST_GPF_REGEN",     "path": "Trips",   "fmt": {"bix": 328, "len": 32, "blsb": true, "max": 4294967,               "div": 1000,                     "unit": "kilometers" },                                                  "name": "Odometer at last gasoline particulate filter regeneration"},
+    {"id": "GENESIS_DIST_SINCE_GPF_REGEN",   "path": "Trips",   "fmt": {"bix": 360, "len": 32, "blsb": true, "max": 4294967,               "div": 1000,                     "unit": "kilometers" },                                                  "name": "Distance since last gasoline particulate filter regeneration"},
+    {"id": "GENESIS_COVERAGE_DRIVEN",        "path": "Engine",  "fmt": {"bix": 392, "len": 32, "blsb": true, "max": 4294967,               "div": 1000,                     "unit": "kilometers" },                                                  "name": "Coverage driven length"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E00A"}, "freq": 1,
   "signals": [
@@ -920,7 +944,7 @@
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E0F2"}, "freq": 1,
   "signals": [
     {"id": "GENESIS_DPF_SUCCESSFUL_REGEN", "path": "Engine", "fmt": {"bix": 432, "len": 16, "max": 65535,                              "unit": "scalar"  }, "name": "Diesel particulate filter successful regeneration count"},
-    {"id": "GENESIS_BOOST_P_V2",           "path": "Engine", "fmt": {"bix": 496, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "unknown" }, "name": "Boost pressure"}
+    {"id": "GENESIS_BOOST_P_7E0",          "path": "Engine", "fmt": {"bix": 496, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "unknown" }, "name": "Boost pressure"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED01"}, "freq": 5,
   "signals": [
@@ -937,10 +961,10 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED02"}, "freq": 5,
   "signals": [
-    {"id": "GENESIS_EOT_V2", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 251, "min": -4, "add": -4, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"},
+    {"id": "GENESIS_EOT_V2", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 251, "min": -4, "add": -4, "unit": "celsius" }, "name": "Engine oil temperature"},
     {"id": "GENESIS_EOT_V2", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 215, "min": -4, "add": -4, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "ED03"}, "freq": 30,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED03"}, "freq": 30,
   "signals": [
     {"id": "GENESIS_FUEL_CONS",              "path": "Fuel",   "fmt": {"bix": 40,  "len": 8,  "max": 326.9992,   "mul": 25647,   "div": 20000,            "unit": "liters"     }, "name": "Fuel consumption"},
     {"id": "GENESIS_EXH_GAS_FLOW_PF",        "path": "Engine", "fmt": {"bix": 256, "len": 8,  "max": 2000000.7,  "mul": 392157,  "div": 50,               "unit": "liters"     }, "name": "Exhaust gas flow in the particulate filter"},
@@ -977,10 +1001,10 @@
     {"id": "GENESIS_REQ_TQ_LIM_TRACTION", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Requested torque limitation from traction control"},
     {"id": "GENESIS_DPF_REGEN_COMPLETED", "path": "Engine", "fmt": {"bix": 200, "len": 8, "max": 255,                         "unit": "scalar"  }, "name": "Diesel particulate filter regen, completed state"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "ED07"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED07"}, "freq": 5,
   "signals": [
-    {"id": "GENESIS_EOT_7E0_V2",  "path": "Engine", "fmt": {"bix": 152, "len": 8, "max": 149.9965, "min": -50, "mul": 0.7843, "add": -50, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"},
-    {"id": "GENESIS_EOT_7E0_7E0", "path": "Engine", "fmt": {"bix": 152, "len": 8, "max": 149.9965, "min": -50, "mul": 0.7843, "add": -50, "unit": "celsius" }, "name": "Engine oil temperature"}
+    {"id": "GENESIS_EOT_7E0_V2",  "path": "Engine", "fmt": {"bix": 152, "len": 8, "max": 149.9965, "min": -50, "mul": 0.7843, "add": -50, "unit": "celsius" }, "name": "Engine oil temperature"},
+    {"id": "GENESIS_EOT_7E0_7E0", "path": "Engine", "fmt": {"bix": 152, "len": 8, "max": 149.9965, "min": -50, "mul": 0.7843, "add": -50, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED08"}, "freq": 5,
   "signals": [
@@ -1036,7 +1060,8 @@
     {"id": "GENESIS_APP_REL_TCM",           "path": "Control",      "fmt": {"bix": 64,  "len": 8,  "max": 100,                   "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Relative accelerator pedal position"},
     {"id": "GENESIS_TURBINE_SPEED",         "path": "Engine",       "fmt": {"bix": 72,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Turbine speed"},
     {"id": "GENESIS_OUTPUT_SPEED",          "path": "Engine",       "fmt": {"bix": 88,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Output speed"},
-    {"id": "GENESIS_ATF_T",                 "path": "Transmission", "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                          "add": -40,  "unit": "celsius"           }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "GENESIS_ATF_T",                 "path": "Transmission", "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                          "add": -40,  "unit": "celsius"           }, "name": "Automatic transmission fluid temperature"},
+    {"id": "GENESIS_ATF_T_7E1",             "path": "Transmission", "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                          "add": -40,  "unit": "celsius"           }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
     {"id": "GENESIS_TORQUE_CONVERTER_SLIP", "path": "Engine",       "fmt": {"bix": 128, "len": 16, "max": 15871.75, "min": -512,             "div": 4,   "add": -512, "unit": "rpm"               }, "name": "Torque converter slip"},
     {"id": "GENESIS_CURRENT_GEAR",          "path": "Transmission", "fmt": {"bix": 168, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Current gear"},
     {"id": "GENESIS_COMMANDED_GEAR",        "path": "Transmission", "fmt": {"bix": 176, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Commanded gear"},
@@ -1069,13 +1094,13 @@
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "01A0"}, "freq": 0.25,
   "signals": [
-    {"id": "GENESIS_RPM_7E1",                  "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM",                               "suggestedMetric": "engineSpeed"},
-    {"id": "GENESIS_RPM",                      "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
+    {"id": "GENESIS_RPM_7E1",                  "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
+    {"id": "GENESIS_RPM",                      "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM",                               "suggestedMetric": "engineSpeed"},
     {"id": "GENESIS_VSS_7E1",                  "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
     {"id": "GENESIS_REL_APP",                  "path": "Movement",     "fmt": {"bix": 64,  "len": 8,  "max": 100,                   "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Relative accelerator pedal position"},
     {"id": "GENESIS_TURBINE_SPEED_V2",         "path": "Movement",     "fmt": {"bix": 72,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Turbine speed"},
     {"id": "GENESIS_OUTPUT_SPEED_V2",          "path": "Movement",     "fmt": {"bix": 88,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Output speed"},
-    {"id": "GENESIS_ATF_T_7E1",                "path": "Engine",       "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                          "add": -40,  "unit": "celsius"           }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "GENESIS_ATF_T_7E1_V2",             "path": "Engine",       "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                          "add": -40,  "unit": "celsius"           }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
     {"id": "GENESIS_TORQUE_CONVERTER_SLIP_V2", "path": "Engine",       "fmt": {"bix": 128, "len": 16, "max": 15871.75, "min": -512,             "div": 4,   "add": -512, "unit": "rpm"               }, "name": "Torque converter slip"},
     {"id": "GENESIS_GEAR_7E1",                 "path": "Transmission", "fmt": {"bix": 160, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Gear selector"},
     {"id": "GENESIS_CURRENT_GEAR_V2",          "path": "Transmission", "fmt": {"bix": 168, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Current gear"},
@@ -1104,7 +1129,7 @@
   "signals": [
     {"id": "GENESIS_GEAR_D",            "path": "Transmission", "fmt": {"bix": 44,  "len": 1,  "max": 1,                                                                                       "unit": "offon"             },                     "name": "Gear position D"},
     {"id": "GENESIS_GEAR_N",            "path": "Transmission", "fmt": {"bix": 45,  "len": 1,  "max": 1,                                                                                       "unit": "offon"             },                     "name": "Gear position N"},
-    {"id": "GENESIS_GEAR_R",            "path": "Transmission", "fmt": {"bix": 46,  "len": 1,  "max": 1,                                                                                       "unit": "offon"             },                     "name": "Gear position R"},
+    {"id": "GENESIS_GEAR_R_V2",         "path": "Transmission", "fmt": {"bix": 46,  "len": 1,  "max": 1,                                                                                       "unit": "offon"             },                     "name": "Gear position R"},
     {"id": "GENESIS_GEAR_P",            "path": "Transmission", "fmt": {"bix": 47,  "len": 1,  "max": 1,                                                                                       "unit": "offon"             },                     "name": "Gear position P"},
     {"id": "GENESIS_BRAKES_APPLIED",    "path": "Control",      "fmt": {"bix": 54,  "len": 1,  "max": 1,                                                                                       "unit": "offon"             },                     "name": "Brakes applied"},
     {"id": "GENESIS_BRAKE_LAMP_STATUS", "path": "Control",      "fmt": {"bix": 55,  "len": 1,  "max": 1,                                                                                       "unit": "offon"             },                     "name": "Brake lamp status"},
