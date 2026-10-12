@@ -946,7 +946,7 @@
     {"id": "GENESIS_CYL_6_INJ_TIME_1ST",   "path": "Engine", "fmt": {"bix": 408, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Cylinder 6 injection time 1st pulse"},
     {"id": "GENESIS_CYCLE_FUEL_CONS",      "path": "Fuel",   "fmt": {"bix": 416, "len": 8,  "max": 21.6189,                     "mul": 8.478,        "div": 100,                               "unit": "unknown" },                     "name": "Cycle fuel consumption"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E0F1"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "E0F1"}, "freq": 1,
   "signals": [
     {"id": "GENESIS_EOT_7E0_2",           "path": "Engine", "fmt": {"bix": 144, "len": 8, "max": 143,  "min": -48,  "mul": 3,       "div": 4,     "add": -48,  "unit": "celsius" }, "name": "Engine oil temperature"},
     {"id": "GENESIS_EXH_GAS_VOLUME_FLOW", "path": "Engine", "fmt": {"bix": 240, "len": 8, "max": 2000,              "mul": 78449,   "div": 10000,              "unit": "unknown" }, "name": "Exhaust gas volume flow"},
@@ -1959,7 +1959,7 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "0201"}, "freq": 1,
   "signals": [
-    {"id": "GENESIS_48_BAT_ST_CHG", "path": "Battery", "fmt": {"bix": 152, "len": 16, "blsb": true, "max": 6553, "div": 10, "unit": "percent" }, "name": "48 battery state of charge"}
+    {"id": "GENESIS_48_BAT_ST_CHG", "path": "Battery", "fmt": {"bix": 144, "len": 16, "blsb": true, "max": 6553, "div": 10, "unit": "percent" }, "name": "48V battery state of charge"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "0203"}, "freq": 1,
   "signals": [
@@ -1997,16 +1997,16 @@
     {"id": "GENESIS_48V_BAT_CURRENT_7E4",       "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 3276,  "min": -3276,               "div": 10,       "sign": true, "unit": "amps"       }, "name": "48V battery current"},
     {"id": "GENESIS_BAT_T_1",                   "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 3276,  "min": -3276,               "div": 10,       "sign": true, "unit": "celsius"    }, "name": "Battery temperature 1"},
     {"id": "GENESIS_BAT_T_2",                   "path": "Battery", "fmt": {"bix": 112, "len": 16, "max": 3276,  "min": -3276,               "div": 10,       "sign": true, "unit": "celsius"    }, "name": "Battery temperature 2"},
-    {"id": "GENESIS_MIN_48V_BAT_V",             "path": "Battery", "fmt": {"bix": 128, "len": 16, "max": 65535,                                                            "unit": "millivolts" }, "name": "Minimum 48V battery voltage"},
-    {"id": "GENESIS_MAX_48V_BAT_V",             "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 65535,                                                            "unit": "millivolts" }, "name": "Maximum 48V battery voltage"},
+    {"id": "GENESIS_48V_CELL_V_MIN",            "path": "Battery", "fmt": {"bix": 128, "len": 16, "max": 65535,                                                            "unit": "millivolts" }, "name": "Minimum 48V battery cell voltage"},
+    {"id": "GENESIS_48V_CELL_V_MAX",            "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 65535,                                                            "unit": "millivolts" }, "name": "Maximum 48V battery cell voltage"},
     {"id": "GENESIS_CURRENT_SENS_NARROW_RANGE", "path": "Battery", "fmt": {"bix": 304, "len": 16, "max": 79.95,               "mul": 26651, "div": 21845000,               "unit": "volts"      }, "name": "Current sensor narrow range, volts"},
-    {"id": "GENESIS_CURRENT_SENS_WIDE_RANGE",   "path": "Battery", "fmt": {"bix": 320, "len": 16, "max": 79.95,               "mul": 26651, "div": 21845000,               "unit": "amps"       }, "name": "Current sensor wide range, volts"}
+    {"id": "GENESIS_CURRENT_SENS_WIDE_RANGE",   "path": "Battery", "fmt": {"bix": 320, "len": 16, "max": 79.95,               "mul": 26651, "div": 21845000,               "unit": "volts"      }, "name": "Current sensor wide range, volts"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "0205"}, "freq": 5,
   "signals": [
-    {"id": "GENESIS_48_BAT_ST_CHG_2", "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 6553,                 "div": 10,               "unit": "percent"    }, "name": "48 battery state of charge 2"},
-    {"id": "GENESIS_48V_BAT_CHG_LIM", "path": "Battery", "fmt": {"bix": 216, "len": 16, "max": 32767, "min": -32768,            "sign": true, "unit": "amps"       }, "name": "48V battery charge limit"},
-    {"id": "GENESIS_48V_BAT_V",       "path": "Battery", "fmt": {"bix": 328, "len": 16, "max": 65535,                                         "unit": "millivolts" }, "name": "48V battery voltage"}
+    {"id": "GENESIS_48_BAT_ST_CHG_2", "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 6553,                  "div": 10,                "unit": "percent" }, "name": "48V battery state of charge 2"},
+    {"id": "GENESIS_48V_BAT_CHG_LIM", "path": "Battery", "fmt": {"bix": 216, "len": 16, "max": 32767,  "min": -32768,             "sign": true, "unit": "amps"    }, "name": "48V battery charge limit"},
+    {"id": "GENESIS_48V_BAT_V",       "path": "Battery", "fmt": {"bix": 328, "len": 16, "max": 655.35,                "div": 100,               "unit": "volts"   }, "name": "48V battery voltage"}
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"21": "C0"}, "freq": 0.25,
   "signals": [
