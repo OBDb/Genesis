@@ -328,7 +328,7 @@
     {"id": "GENESIS_HVAC_COOLANT_T",  "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Coolant temperature"},
     {"id": "GENESIS_HVAC_INVERTER_T", "path": "Engine", "fmt": {"bix": 96, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Inverter temperature"}
   ]},
-{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "dbg": true, "cmd": {"22": "B002"}, "freq": 5,
+{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "dbg": true, "cmd": {"22": "B002"}, "freq": 1,
   "signals": [
     {"id": "GENESIS_FLI_VOL",              "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,      "div": 2,                  "nullmax": 127.5, "unit": "liters"     }, "name": "Fuel level",         "suggestedMetric": "fuelTankLevel"},
     {"id": "GENESIS_FLI_VOL_THIRDGEN",     "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,      "div": 2,                                    "unit": "liters"     }, "name": "Fuel level",         "suggestedMetric": "fuelTankLevel"},
