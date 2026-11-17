@@ -156,7 +156,7 @@
 { "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC05"}, "freq": 2,
   "signals": [
     {"id": "GENESIS_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
-    {"id": "GENESIS_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
+    {"id": "GENESIS_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 2,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
   ]},
 { "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC06"}, "freq": 0.25,
   "signals": [
@@ -331,15 +331,16 @@
   ]},
 { "hdr": "7C6", "rax": "7CE", "fcm1": true, "dbg": true, "cmd": {"22": "B002"}, "freq": 1,
   "signals": [
-    {"id": "GENESIS_FLI_VOL",              "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,      "div": 2,                  "nullmax": 127.5, "unit": "liters"     }, "name": "Fuel level",         "suggestedMetric": "fuelTankLevel"},
-    {"id": "GENESIS_FLI_VOL_THIRDGEN",     "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,      "div": 2,                                    "unit": "liters"     }, "name": "Fuel level",         "suggestedMetric": "fuelTankLevel"},
-    {"id": "GENESIS_CLUSTER_VOLTAGE",      "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,         "div": 12.8,                                 "unit": "volts"      }, "name": "Cluster voltage",    "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "GENESIS_FLI_VOL",              "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,      "div": 2,                  "nullmax": 127.5, "unit": "liters"     }, "name": "Fuel level",          "suggestedMetric": "fuelTankLevel"},
+    {"id": "GENESIS_FLI_VOL_THIRDGEN",     "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,      "div": 2,                                    "unit": "liters"     }, "name": "Fuel level",          "suggestedMetric": "fuelTankLevel"},
+    {"id": "GENESIS_CLUSTER_VOLTAGE",      "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,         "div": 12.8,                                 "unit": "volts"      }, "name": "Cluster voltage",     "suggestedMetric": "starterBatteryVoltage"},
     {"id": "GENESIS_CRUZ_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,         "div": 12.8,                                 "unit": "volts"      }, "name": "Cluster voltage"},
-    {"id": "GENESIS_ODO_KM",               "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,                                                "unit": "kilometers" }, "name": "Odometer, metric",   "suggestedMetric": "odometer"},
-    {"id": "GENESIS_ODO",                  "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 4294967295,                                              "unit": "kilometers" }, "name": "Odometer",           "suggestedMetric": "odometer"},
-    {"id": "GENESIS_CRUZ_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,                "nullmin": 0,                   "unit": "kilometers" }, "name": "Odometer, metric",   "suggestedMetric": "odometer"},
-    {"id": "GENESIS_ODO_MI",               "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,                                                "unit": "miles"      }, "name": "Odometer, imperial", "suggestedMetric": "odometer"},
-    {"id": "GENESIS_CRUZ_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,                "nullmin": 0,                   "unit": "miles"      }, "name": "Odometer, imperial", "suggestedMetric": "odometer"}
+    {"id": "GENESIS_VPWR",                 "path": "Battery",    "fmt": {"bix": 40, "len": 8,  "max": 18,         "div": 12.8, "nullmin": 0,                   "unit": "volts"      }, "name": "12v battery voltage", "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "GENESIS_ODO_KM",               "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,                                                "unit": "kilometers" }, "name": "Odometer, metric",    "suggestedMetric": "odometer"},
+    {"id": "GENESIS_ODO",                  "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 4294967295,                                              "unit": "kilometers" }, "name": "Odometer",            "suggestedMetric": "odometer"},
+    {"id": "GENESIS_CRUZ_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,                "nullmin": 0,                   "unit": "kilometers" }, "name": "Odometer, metric",    "suggestedMetric": "odometer"},
+    {"id": "GENESIS_ODO_MI",               "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,                                                "unit": "miles"      }, "name": "Odometer, imperial",  "suggestedMetric": "odometer"},
+    {"id": "GENESIS_CRUZ_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,                "nullmin": 0,                   "unit": "miles"      }, "name": "Odometer, imperial",  "suggestedMetric": "odometer"}
   ]},
 { "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
   "signals": [
@@ -477,6 +478,7 @@
     {"id": "GENESIS_ENGINE_COOLANT_T_FD",                   "path": "Engine",   "fmt": {"bix": 200, "len": 8,  "max": 143.25, "min": -48,      "mul": 0.75,                      "add": -48, "unit": "celsius" },                   "name": "Engine coolant temperature"},
     {"id": "GENESIS_IAT_SENSOR_VOLTAGE",                    "path": "Battery",  "fmt": {"bix": 248, "len": 16, "blsb": true,  "max": 319.9951,              "mul": 0.0048828125,                               "unit": "volts"      },                                                          "name": "Intake air temperature sensor voltage"},
     {"id": "GENESIS_INTAKE_AIR_T",                          "path": "Engine",   "fmt": {"bix": 264, "len": 8,  "max": 143.25, "min": -48,      "mul": 0.75,                      "add": -48, "unit": "celsius" },                   "name": "Intake air temperature",                           "suggestedMetric": "intakeAirTemperature"},
+    {"id": "GENESIS_INTAKE_AIR_T_FD",                       "path": "Engine",   "fmt": {"bix": 264, "len": 8,  "max": 143.25, "min": -48,      "mul": 0.75,                      "add": -48, "unit": "celsius" },                   "name": "Intake air temperature"},
     {"id": "GENESIS_ENGINE_OIL_T",                          "path": "Engine",   "fmt": {"bix": 272, "len": 8,  "max": 143.25, "min": -48,      "mul": 0.75,                      "add": -48, "unit": "celsius" },                   "name": "Engine oil temperature",                           "suggestedMetric": "engineOilTemperature"},
     {"id": "GENESIS_ENGINE_OIL_T_FD",                       "path": "Engine",   "fmt": {"bix": 272, "len": 8,  "max": 143.25, "min": -48,      "mul": 0.75,                      "add": -48, "unit": "celsius" },                   "name": "Engine oil temperature"}
   ]},
@@ -1204,11 +1206,11 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "E004"}, "freq": 1,
   "signals": [
-    {"id": "GENESIS_ACCELERATOR_PEDAL_POSITION", "path": "Control",  "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 100,                             "div": 512,                                   "unit": "percent"           },                             "name": "Accelerator pedal position"},
-    {"id": "GENESIS_VSS_HD",                     "path": "Movement", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 511, "min": -512, "mul": 156.25, "div": 10000, "sign": true,                   "unit": "kilometersPerHour" },                             "name": "Vehicle speed, high resolution", "suggestedMetric": "speed"},
-    {"id": "GENESIS_12V_V",                      "path": "Battery",  "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 32,               "mul": 4.883,  "div": 10000,                                 "unit": "volts"             },                             "name": "Auxiliary battery voltage",      "suggestedMetric": "starterBatteryVoltage"},
-    {"id": "GENESIS_VPWR_V3",                    "path": "Battery",  "fmt": {"bix": 152, "len": 8,  "max": 25.5,                           "div": 10,                                 "unit": "volts"   },                          "name": "12V battery voltage"},
-    {"id": "GENESIS_VPWR_7E2",                   "path": "Battery",  "fmt": {"bix": 152, "len": 8,  "max": 100,                                                                       "unit": "percent" },                          "name": "12V battery charge"}
+    {"id": "GENESIS_ACCELERATOR_PEDAL_POSITION", "path": "Control",  "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 100,                             "div": 512,                                                 "unit": "percent"           },                             "name": "Accelerator pedal position"},
+    {"id": "GENESIS_VSS_HD",                     "path": "Movement", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 511, "min": -512, "mul": 156.25, "div": 10000, "sign": true,                                 "unit": "kilometersPerHour" },                             "name": "Vehicle speed, high resolution", "suggestedMetric": "speed"},
+    {"id": "GENESIS_12V_V",                      "path": "Battery",  "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 32,               "mul": 4.883,  "div": 10000,               "nullmin": 0,                   "unit": "volts"             },                             "name": "Auxiliary battery voltage",      "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "GENESIS_VPWR_V3",                    "path": "Battery",  "fmt": {"bix": 152, "len": 8,  "max": 25.5,                           "div": 10,                                               "unit": "volts"   },                          "name": "12V battery voltage"},
+    {"id": "GENESIS_VPWR_7E2",                   "path": "Battery",  "fmt": {"bix": 152, "len": 8,  "max": 100,                                                                                     "unit": "percent" },                          "name": "12V battery charge"}
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "E005"}, "freq": 1,
   "signals": [
@@ -1567,7 +1569,7 @@
     {"id": "GENESIS_HVBAT_FAN",                    "path": "Battery",  "fmt": {"bix": 224, "len": 8,  "max": 255,                                                                                               "unit": "hertz"         }, "name": "HV battery fan"},
     {"id": "GENESIS_AUXILLARY_BATTERY_VOLTAGE",    "path": "Battery",  "fmt": {"bix": 232, "len": 8,  "max": 14.6,        "min": 11,      "div": 10,                                                            "unit": "volts"         }, "name": "Auxiliary battery voltage"},
     {"id": "GENESIS_VPWR_V2",                      "path": "Battery",  "fmt": {"bix": 232, "len": 8,  "max": 25.5,                        "div": 10,                            "nullmin": 0,                   "unit": "volts"         }, "name": "Battery auxiliary voltage",            "suggestedMetric": "starterBatteryVoltage"},
-    {"id": "GENESIS_VPWR",                         "path": "Battery",  "fmt": {"bix": 232, "len": 8,  "max": 25.5,                        "div": 10,                                                            "unit": "volts"         }, "name": "Battery auxiliary voltage",            "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "GENESIS_VPWR_V2",                      "path": "Battery",  "fmt": {"bix": 232, "len": 8,  "max": 25.5,                        "div": 10,                                                            "unit": "volts"         }, "name": "Battery auxiliary voltage",            "suggestedMetric": "starterBatteryVoltage"},
     {"id": "GENESIS_CUMULATIVE_CHARGE_CURRENT",    "path": "Battery",  "fmt": {"bix": 240, "len": 32, "max": 429496729.5,                 "div": 10,                                                            "unit": "ampereHours"   }, "name": "Cumulative charge current"},
     {"id": "GENESIS_HVBAT_CHRG_TOT_C",             "path": "Battery",  "fmt": {"bix": 240, "len": 32, "max": 429496729,                   "div": 10,                                                            "unit": "ampereHours"   }, "name": "Total charge current"},
     {"id": "GENESIS_CUMULATIVE_DISCHARGE_CURRENT", "path": "Battery",  "fmt": {"bix": 272, "len": 32, "max": 429496729.5,                 "div": 10,                                                            "unit": "ampereHours"   }, "name": "Cumulative discharge current"},
